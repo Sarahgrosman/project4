@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Select = () => {
+const Select = ({sort}) => {
   return (
     <div>
         <h2>sort by:</h2>
-        <select className='select'>
+        <select className='select'  onChange={sort}>
+        <option value="" ></option>
         <option value='name'>NAME</option>
         <option value='date'>DATE</option>
         <option value='repositories'>REPOSITORIES</option>
